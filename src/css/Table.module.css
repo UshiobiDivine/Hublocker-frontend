@@ -8,6 +8,7 @@
   padding-right: 50px;
   margin-bottom: 13px;
   color: rgb(0, 0, 0) !important;
+  min-width: 800px;
 }
 
 .rent {
@@ -21,5 +22,15 @@
 .item {
   padding: 0 14px;
   font-weight: bold;
-  font-size: 14px
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+  .containerSup {
+    position: relative;
+    width: 100%;
+  }
+  .container {
+    overflow: auto;
+  }
 }

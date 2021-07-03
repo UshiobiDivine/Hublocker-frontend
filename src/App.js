@@ -4,8 +4,8 @@ import "./App.css";
 import Banner from "./components/Banner";
 import NavigationBar from "./components/NavigationBar";
 import SingleSelect from "./components/Selectbox";
-import Location from "./components/Location";
-import Table from "./components/Table";
+
+import LocAndTable from "./components/LocAndTable";
 
 function App() {
   return (
@@ -13,9 +13,8 @@ function App() {
       <Router>
         <NavigationBar />
         <Banner />
-        <Location/>
-        <Table/>
-        {/* <SingleSelect /> */}
+        
+        <LocAndTable />
 
         <Switch>
           <Route path="/" />

@@ -61,7 +61,7 @@ export default function MyTable() {
   //   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.containerSup}>
       {rows.map((row) => (
         <div className={classes.container}>
           <div className={classes.item}>{row.size}</div>
