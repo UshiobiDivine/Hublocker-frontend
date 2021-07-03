@@ -25,7 +25,9 @@
   grid-template-columns: 1fr 2fr;
 }
 
-.banner-down > h3,
-div {
-  color: rgb(112, 112, 112);
+.banner-down > h3 {
+  color: rgb(121, 121, 121);
+}
+.banner-down > div {
+  color: rgb(121, 121, 121);
 }
