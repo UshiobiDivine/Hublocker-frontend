@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Banner from "./components/Banner";
 import NavigationBar from "./components/NavigationBar";
+import SingleSelect from "./components/Selectbox";
+import Location from "./components/Location";
+import Table from "./components/Table";
 
 function App() {
   return (
@@ -10,6 +13,10 @@ function App() {
       <Router>
         <NavigationBar />
         <Banner />
+        <Location/>
+        <Table/>
+        {/* <SingleSelect /> */}
+
         <Switch>
           <Route path="/" />
         </Switch>
