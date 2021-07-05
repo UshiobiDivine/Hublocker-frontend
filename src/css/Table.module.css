@@ -29,8 +29,9 @@
   .containerSup {
     position: relative;
     width: 100%;
+    height: auto;
   }
   .container {
-    overflow: auto;
+    overflow-x: auto;
   }
 }

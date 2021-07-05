@@ -3,6 +3,9 @@ import "../css/Banner.css";
 import loc1 from "../images/loc1.jpg";
 import SelectBox from "./Selectbox";
 import Select from "react-select";
+import CustomSelect from "./CustomSelect";
+import SearchBar from "./Search";
+import { Segment, Input } from "semantic-ui-react";
 
 const options = [
   { value: "closest", label: "Closest" },
@@ -16,7 +19,8 @@ const customStyles = {
     color: state.isSelected ? "black" : "grey",
     backgroundColor: state.isSelected ? "grey" : "rgb(218, 218, 218)",
     // padding: 10,
-    width: 300,
+    width: 230,
+    height: 30,
     fontSize: 13,
     borderColor: null,
   }),
@@ -40,18 +44,31 @@ function Banner(props) {
     console.log(`Option selected:`, selectedOption);
   }
   return (
-    <div>
+    <div className="container-banner">
       <div className="banner">
-        <img className="img" src={loc1} alt="" />
+        <div className="see">
+          {/* <h1>Find a Locker</h1> */}
+          <input
+            className="input"
+            type="search"
+            placeholder="Enter City or State"
+          />
+          <div className="find">
+            <div className="findloc">Find Locker</div>
+            <div className="rent">One naira for first rent</div>
+          </div>
+        </div>
       </div>
 
       <div className="banner-down">
         <h3>6 Open Lockers Available</h3>
-
+        {/* <Input loading icon='user' iconPosition='left' placeholder="Enter City or State" /> */}
+        {/* <SearchBar /> */}
         <div className="banner-in">
           <h3>Sort By</h3>
 
           <span>
+            {/* <CustomSelect /> */}
             <Select
               value={selectedOption.value}
               onChange={handleChange}

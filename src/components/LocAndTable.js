@@ -24,12 +24,13 @@ const customStyles = {
   control: () => ({
     // none of react-select's styles are passed to <Control />
     width: 300,
+    height: 30,
   }),
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = "opacity 300ms";
-    return { ...provided, opacity, transition };
-  },
+  //   singleValue: (provided, state) => {
+  //     const opacity = state.isDisabled ? 0.5 : 1;
+  //     const transition = "opacity 300ms";
+  //     return { ...provided, opacity, transition };
+  //   },
 };
 
 function LocAndTable() {

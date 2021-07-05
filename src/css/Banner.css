@@ -2,6 +2,10 @@
   height: 450px;
   width: 100%;
   background-color: aqua;
+  background-image: url("../images/loc1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .img {
@@ -23,6 +27,7 @@
 .banner-in {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  /* background-color: red; */
 }
 
 .banner-down > h3 {
@@ -30,4 +35,66 @@
 }
 .banner-down > div {
   color: rgb(121, 121, 121);
+}
+
+.see {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.712);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 18px;
+}
+
+.see > input {
+  margin-left: 38px;
+  /* width: 50px; */
+  height: 30px;
+  align-items: center;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: transparent;
+  outline: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.find {
+  background-color: red;
+  height: 70px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 12px 2px;
+  font-size: 21px;
+  color: white;
+  font-weight: bold;
+  margin-right: 19px;
+  /* width: 90px; */
+}
+
+.findloc {
+  margin-bottom: 2px;
+  /* margin-top: 17px; */
+}
+
+.rent {
+  font-size: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(233, 6, 6);
+  /* height: 30px; */
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: bold;
+  /* padding: 0 4px; */
+  margin-bottom: -7px;
+
+  /* padding-top: -5px; */
 }

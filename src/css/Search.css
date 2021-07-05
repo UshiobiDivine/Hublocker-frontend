@@ -1,11 +1,15 @@
-.container{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-.con{
-    background-color: white;
+.con {
+  background-color: white;
 }
 
-.item2{
-    background-color: rgb(221, 0, 0);
+.item2 {
+  background-color: rgb(221, 0, 0);
+}
+.Dropdown {
+  background-color: red;
+  appearance: none;
 }

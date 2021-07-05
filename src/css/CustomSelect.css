@@ -1,0 +1,69 @@
+.select {
+  width: 300px;
+  padding: 10px;
+}
+
+/*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.select {
+  /* // A reset of styles, including removing the default dropdown arrow */
+/* appearance: none; */
+
+/* // Additional resets for further consistency */
+/*background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  /* border: 1px solid var(--select-border); */
+/* border-radius: 0.25em; */
+/*padding: 0.25em 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  /* line-height: 1.1; */
+/* background-color: rgb(235, 235, 235); */
+/* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+/* display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+select,
+.select::after {
+  grid-area: select;
+  justify-self: end;
+}
+option {
+  /* background-color: rgb(224, 10, 10); */
+/* border-radius: 5px; */
+/* box-shadow: 4px 4px #ccc; */
+/*outline: blue;
+  padding: 7px;
+}*/
