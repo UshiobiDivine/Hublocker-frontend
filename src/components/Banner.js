@@ -54,8 +54,10 @@ function Banner(props) {
             placeholder="Enter City or State"
           />
           <div className="find">
-            <div className="findloc">Find Locker</div>
-            <div className="rent">One naira for first rent</div>
+            <div className="find22">
+              <div className="findloc">Find Locker</div>
+              <div className="rent">One Naira For First Rent</div>
+            </div>
           </div>
         </div>
       </div>

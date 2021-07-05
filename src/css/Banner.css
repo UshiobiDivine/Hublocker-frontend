@@ -38,7 +38,7 @@
 }
 
 .see {
-  height: 100px;
+  height: 70px;
   background-color: rgba(255, 255, 255, 0.712);
   width: 50%;
   display: grid;
@@ -46,7 +46,7 @@
   align-items: center;
   position: absolute;
   top: 50%;
-  margin-top: -50px;
+  margin-top: -35px;
   margin-left: 18px;
 }
 
@@ -67,9 +67,14 @@
   outline: none;
 }
 
+::placeholder {
+  color: rgb(73, 73, 73);
+  font-weight: bold;
+}
+
 .find {
-  background-color: red;
-  height: 70px;
+  background-color: rgba(196, 64, 47, 0.884);
+  height: 85%;
   margin: 20px 0;
   text-align: center;
   padding: 12px 2px;
@@ -78,22 +83,32 @@
   font-weight: bold;
   margin-right: 19px;
   /* width: 90px; */
+  position: relative;
+}
+
+.find22 {
+  height: 70px;
+  /* background-color: rgb(0, 155, 21); */
+  position: absolute;
+  width: 100%;
+  top: 29%;
 }
 
 .findloc {
   margin-bottom: 2px;
+  font-size: 19px;
   /* margin-top: 17px; */
 }
 
 .rent {
-  font-size: 10px;
+  font-size: 9px;
   background-color: rgb(255, 255, 255);
-  color: rgb(233, 6, 6);
-  /* height: 30px; */
+  color: rgba(196, 47, 47, 0.884);
+  /* height: 1; */
   width: fit-content;
   margin: 0 auto;
   font-weight: bold;
-  /* padding: 0 4px; */
+  padding: -18px 2px;
   margin-bottom: -7px;
 
   /* padding-top: -5px; */
