@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "../css/Navigation.css";
+import logo from '../images/HubLogo.png'
 
 function NavigationBar() {
   const [open, setOpen] = useState(false);
@@ -18,8 +19,11 @@ function NavigationBar() {
       <div>
         {/* <img src="" alt="here">Logo</img> */}
         <div className="nav-logo">
-          <div>HUBLOCKER</div>
-          <div>OCEANGRSMITH</div>
+          <img src={logo} alt=""/>
+          <div>
+            <div className="hub">HUBLOCKER</div>
+            <div className="ocean">BY OCEANGRSMITH</div>
+          </div>
         </div>
       </div>
 

@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: 0.5fr 3fr;
   height: 100px;
-  grid-column-gap: 25px;
+  /* grid-column-gap: 25px; */
   /* margin-top: 30px; */
-  margin: 30px 20px;
+  margin: 18px 20px;
 }
 .item1 {
   /* background-color: rgb(255, 75, 43); */
@@ -13,20 +13,16 @@
   /* background-color: rgb(204, 52, 25); */
 }
 .item22 {
-  height: 50px;
+  height: 40px;
   /* background-color: aqua; */
   margin-bottom: 60px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
 }
 .atag {
   font-weight: bold;
-}
-a:visited {
-  color: blue;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 900px) {
@@ -42,4 +38,66 @@ a:visited {
   .select {
     margin-top: 70px;
   }
+}
+
+.select {
+  width: 300px;
+  padding: 10px;
+}
+
+.standardSelect {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: transparent;
+}
+
+.standardSelect:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.standardSelect {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  /* border: 1px solid var(--select-border); */
+  /* border-radius: 0.25em; */
+  /* padding: 0.25em 1em; */
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+  cursor: pointer;
+  line-height: 1.1;
+  /* background-color: rgb(255, 255, 255); */
+  background-image: linear-gradient(to top, #adadad, #adadad 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  color: rgb(27, 27, 27);
+  
+}
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+select,
+.select::after {
+  grid-area: select;
+  justify-self: end;
+}
+option {
+  /* background-color: rgb(230, 230, 230); */
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+  padding: 7px;
 }

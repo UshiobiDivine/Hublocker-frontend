@@ -27,6 +27,7 @@
 .banner-in {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin-right: 37px;
   /* background-color: red; */
 }
 
@@ -70,6 +71,14 @@
 ::placeholder {
   color: rgb(73, 73, 73);
   font-weight: bold;
+}
+
+.find-a-locker {
+  font-weight: bold;
+  font-size: 38px;
+  top: 34%;
+  position: absolute;
+  margin-left: 16px;
 }
 
 .find {
