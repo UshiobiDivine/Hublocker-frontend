@@ -23,7 +23,7 @@
 }
 .atag {
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 @media only screen and (max-width: 900px) {

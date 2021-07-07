@@ -6,27 +6,36 @@ import LockerContext from "../store/location-context";
 import Location from "./Location";
 import Table from "./Table";
 import classes from "../css/LocAndTable.module.css";
+import LocationApis from "../apis/LocationApi";
 
 function Banner() {
   const [loadedLocations, setloadedLocations] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(async () => {
-    fetch(`http://localhost:8080/api/locker/${searchTerm}`, {
-      headers: {
-        "Content-Type": "application/json;charset=UTF-8",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setloadedLocations(data);
-      });
+
+    const data = await LocationApis.getAllLockersByLocation(searchTerm);
+    console.log(data);
+    setloadedLocations(data)
+
   }, [searchTerm]);
 
-  const datum = Object.entries(loadedLocations);
+  // console.log(`IN THE BAAAANNNNNEEEERR LOADED-LOCATION IS ${loadedLocations}`)
+
+  let vals =  [];
+
+  loadedLocations.forEach(element => {
+
+    if (element.location.locationName.startsWith(searchTerm)) {
+      console.log(element.location.locationName)
+      vals=element.location;
+    } else {
+      vals = []
+      // console.log(element.location);
+    }
+    
+  });
+
 
   return (
     <>
@@ -64,11 +73,14 @@ function Banner() {
         </div>
       </div>
 {}
-      {/* {loadedLocations.map((loc)=>{ */}
 
       <div className={classes.container}>
         <div className={classes.item1}>
-          <Location lockers={datum}/>
+
+
+          <Location lockers={vals}/>
+
+
         </div>
         <div className={classes.item2}>
           <div className={classes.item22}>
@@ -93,7 +105,7 @@ function Banner() {
             </div>
             {/* <div>{datum}</div> */}
           </div>
-          <Table />
+          <Table lockers={loadedLocations}/>
         </div>
       </div>
       {/* })} */}

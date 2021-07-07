@@ -1,7 +1,6 @@
 .banner {
   height: 450px;
   width: 100%;
-  background-color: aqua;
   background-image: url("../images/loc1.jpg");
   background-size: cover;
   background-repeat: no-repeat;

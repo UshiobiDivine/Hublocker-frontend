@@ -18,7 +18,14 @@
   margin-right: 15px;
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
+
+.rent a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .item {
   padding: 0 14px;
   font-weight: bold;
