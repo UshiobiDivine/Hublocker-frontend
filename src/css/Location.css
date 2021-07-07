@@ -1,4 +1,15 @@
 .imgg {
   height: 150px;
-  width: 150px;
+  width: 130px;
+}
+.cont {
+  font-weight: bold;
+  color: rgb(0, 102, 255);
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 900px) {
+  .imgg{
+    width: 30%;
+  }
 }
