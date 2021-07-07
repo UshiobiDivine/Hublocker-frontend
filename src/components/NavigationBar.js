@@ -14,6 +14,7 @@ function NavigationBar() {
   const closeMenu = () => {
     setOpen(false);
   };
+  
   return (
     <nav className="navbar">
       <div>

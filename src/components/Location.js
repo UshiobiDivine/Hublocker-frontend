@@ -18,24 +18,26 @@ function Location(props) {
     console.log(newrate);
   };
 
+  const lockerIsEmpty = (props.lockers.length===0) ? true : false;
+
+  console.log(lockerIsEmpty, props.lockers)
+
   return (
     <div>
       <div className="cont">
-        <img className="imgg" src={props.lockers.imageUrl} alt="" />
+        <img className="imgg" src={ lockerIsEmpty ? loca : props.lockers.imageUrl} alt="" />
         <div>{props.lockers.locationName}</div>
         <div className="rating">
-          {" "}
-          {/* <Rating icon="star" defaultRating={3} maxRating={5} /> */}
-          <ReactStars
+          {lockerIsEmpty ? <div>Available Lockers in all Locations</div> : <ReactStars
             count={5}
-            onChange={() => ratingChanged(rate)}
+            // onChange={() => ratingChanged(rate)}
             size={18}
             activeColor="rgb(211, 3, 3)"
-            // isHalf={true}
             value={5}
-          />
+          />}
+          
         </div>
-        <div className="distance">{props.lockers.distance} miles away</div>
+        <div className="distance">{ lockerIsEmpty ?"": `${props.lockers.distance} miles away` }</div>
       </div>
     </div>
   );

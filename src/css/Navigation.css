@@ -38,6 +38,7 @@
   grid-gap: 20px;
   list-style: none;
   top: 10%;
+  z-index: 1000;
   /* background-color: black; */
 }
 
@@ -69,7 +70,7 @@
 }
 
 .nav-link:hover {
-  color: red;
+  color: rgb(58, 58, 58);
 }
 
 .nav-icon {
@@ -92,11 +93,21 @@
     top: 80px;
     left: -100%;
     transition: 0.5s all;
+    color: aliceblue;
+  }
+
+  .nav-link{
+    color: aliceblue;
+  }
+
+  .nav-link:hover {
+    color: rgba(252, 193, 1, 0.822);
   }
 
   .nav-links.active {
-    background: rgba(255, 208, 0, 0.445);
+    background: rgba(0, 0, 0, 0.801);
     left: 0;
+    
   }
 
   .nav-item {

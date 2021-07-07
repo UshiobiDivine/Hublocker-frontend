@@ -1,8 +1,6 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Banner.css";
-import loc1 from "../images/loc1.jpg";
 import CustomSelect from "./CustomSelect";
-import LockerContext from "../store/location-context";
 import Location from "./Location";
 import Table from "./Table";
 import classes from "../css/LocAndTable.module.css";
@@ -20,8 +18,6 @@ function Banner() {
 
   }, [searchTerm]);
 
-  // console.log(`IN THE BAAAANNNNNEEEERR LOADED-LOCATION IS ${loadedLocations}`)
-
   let vals =  [];
   let availabileLockers = 0;
 
@@ -29,12 +25,11 @@ function Banner() {
 
     availabileLockers += Number(element.quantityAvailable);
 
-    if (element.location.locationName.startsWith(searchTerm)) {
-      console.log(element.location.locationName)
-      vals=element.location;
-    } else {
+    if (searchTerm ==="") {
+      console.log(`LOCATTITOOONN ISSS ${element.location.locationName}`)
       vals = []
-      // console.log(element.location);
+    } else {
+      vals=element.location;
     }
     
   });
@@ -106,12 +101,10 @@ function Banner() {
             <div className={classes.atag}>
               <a href="#">View the guide size</a>
             </div>
-            {/* <div>{datum}</div> */}
           </div>
           <Table lockers={loadedLocations}/>
         </div>
       </div>
-      {/* })} */}
     </>
   );
 }

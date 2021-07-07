@@ -1,7 +1,7 @@
 .banner {
   height: 450px;
   width: 100%;
-  background-image: url("../images/loc1.jpg");
+  background-image: url("https://d2r72yk5wmppdj.cloudfront.net/m/4b89e23d3c5c1f74/Medium-Locker-Image-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -26,7 +26,7 @@
 .banner-in {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-right: 37px;
+  /* margin-right: 37px; */
   /* background-color: red; */
 }
 
@@ -52,7 +52,6 @@
 
 .see > input {
   margin-left: 38px;
-  /* width: 50px; */
   height: 30px;
   align-items: center;
   border-top-style: hidden;
@@ -112,7 +111,6 @@
   font-size: 9px;
   background-color: rgb(255, 255, 255);
   color: rgba(196, 47, 47, 0.884);
-  /* height: 1; */
   width: fit-content;
   margin: 0 auto;
   font-weight: bold;
@@ -120,4 +118,22 @@
   margin-bottom: -7px;
 
   /* padding-top: -5px; */
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.see {
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.712);
+  width: 95%;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  margin-left: 18px;
+  /* margin-right: 18px; */
+}
 }

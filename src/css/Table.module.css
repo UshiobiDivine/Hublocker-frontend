@@ -11,6 +11,8 @@
   min-width: 800px;
 }
 
+
+
 .rent {
   background-color: rgba(10, 161, 56, 0.89);
   text-align: center;
@@ -32,13 +34,20 @@
   font-size: 14px;
 }
 
+.containerSup {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
 @media only screen and (max-width: 900px) {
   .containerSup {
     position: relative;
-    width: 100%;
+    width: 600px;
     height: auto;
-  }
-  .container {
     overflow-x: auto;
+    /* white-space: nowrap; */
   }
+  
 }
