@@ -23,8 +23,11 @@ function Banner() {
   // console.log(`IN THE BAAAANNNNNEEEERR LOADED-LOCATION IS ${loadedLocations}`)
 
   let vals =  [];
+  let availabileLockers = 0;
 
   loadedLocations.forEach(element => {
+
+    availabileLockers += Number(element.quantityAvailable);
 
     if (element.location.locationName.startsWith(searchTerm)) {
       console.log(element.location.locationName)
@@ -62,7 +65,7 @@ function Banner() {
         </div>
 
         <div className="banner-down">
-          <h3>6 Open Lockers Available</h3>
+          <h3>{availabileLockers} Open Lockers Available</h3>
           <div className="banner-in">
             <h3>Sort By</h3>
 

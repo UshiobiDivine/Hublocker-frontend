@@ -37,7 +37,6 @@ function Location(props) {
         </div>
         <div className="distance">{props.lockers.distance} miles away</div>
       </div>
-      ;
     </div>
   );
 }

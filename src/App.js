@@ -1,22 +1,21 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import "./App.css";
-import Banner from "./components/Banner";
-import NavigationBar from "./components/NavigationBar";
 import BlankPage from "./components/BlankPage";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
     <div className="app">
       <Router>
         <Switch>
-          <Route path="/" component={NavigationBar}>
-            <NavigationBar />
-            <Banner />
-          </Route>
-          <Route path="/rent" component={BlankPage} >
-            <BlankPage />
-          </Route>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/rent" component={BlankPage} />
         </Switch>
       </Router>
     </div>
